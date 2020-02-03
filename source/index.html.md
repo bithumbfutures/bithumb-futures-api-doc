@@ -26,6 +26,7 @@ includes:
   - futures_rest_prv_position_contract
   - futures_rest_prv_position_risk
   - futures_rest_prv_funding_payment_hist
+  - futures_rest_prv_wallet_transactions
 
   - futures_rest_order
   - futures_rest_order_new
