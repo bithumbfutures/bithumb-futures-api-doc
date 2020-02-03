@@ -1,5 +1,6 @@
 Bithumb Futures API Documentation (Beta)
 -----------------------------
 
-https://bithumbfutures.github.io/bithumb-futures-api-doc/
+Read this doc at: https://bithumbfutures.github.io/bithumb-futures-api-doc/
+
 
