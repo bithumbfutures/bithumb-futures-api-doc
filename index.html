@@ -1822,7 +1822,99 @@ to you account. </p>
 <td>id from request if provided</td>
 </tr>
 </tbody></table>
-<h3 id='cancel-an-order'>Cancel an Order</h3><h3 id='list-open-orders'>List Open Orders</h3>
+<h3 id='cancel-an-order'>Cancel an Order</h3>
+<blockquote>
+<p>Cancel Order - Successful ACK Response (Status 200, code 0)</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"accountId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"fut1FfjKA3W1L7XZOipGKZNFBb34GRQ3"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"ac"</span><span class="p">:</span><span class="w"> </span><span class="s2">"CASH"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"action"</span><span class="p">:</span><span class="w"> </span><span class="s2">"cancel-order"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Ack"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"info"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w">        </span><span class="s2">"sPWweX8baCYeFsKdmqZEmHdpliWaJuGm"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"orderId"</span><span class="p">:</span><span class="w">   </span><span class="s2">"kIXfMP72VfFDp653WoNqNGcpZCK9W7ts"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"orderType"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"> </span><span class="err">//</span><span class="w"> </span><span class="err">could</span><span class="w"> </span><span class="err">be</span><span class="w"> </span><span class="err">empty</span><span class="w">
+            </span><span class="s2">"symbol"</span><span class="p">:</span><span class="w">    </span><span class="s2">"BTC-PERP"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"timestamp"</span><span class="p">:</span><span class="w">  </span><span class="mi">1573596082932</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<blockquote>
+<p>Cancel Order - Error Response (Status 200, code 0)</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="mi">300006</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"accountId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"fut1FfjKA3W1L7XZOipGKZNFBb34GRQ3"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"ac"</span><span class="p">:</span><span class="w"> </span><span class="s2">"CASH"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"action"</span><span class="p">:</span><span class="w"> </span><span class="s2">"cancel-order"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Err"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Invalid Client Order Id: ku30AehuWoHzMeyGEAS8heeDXpb1heOS"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"reason"</span><span class="p">:</span><span class="w">  </span><span class="s2">"INVALID_ORDER_ID"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"info"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ku30AehuWoHzMeyGEAS8heeDXpb1heOS"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"symbol"</span><span class="p">:</span><span class="w">  </span><span class="s2">"BTC-PERP"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>Cancel an existing open order. </p>
+<h4 id='http-request'>HTTP Request</h4>
+<p><code>DELETE &lt;account-group&gt;/api/pro/v1/futures/order</code></p>
+<h4 id='signature'>Signature</h4>
+<p>You should sign the message in header as specified in <a href="#sign-a-request"><strong>Authenticate a RESTful Request</strong></a> section.</p>
+<h4 id='prehash-string'>Prehash String</h4>
+<p><code>&lt;timestamp&gt;+order</code></p>
+<h4 id='request-parameters'>Request Parameters</h4>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Required</th>
+<th>Value Range</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>String</td>
+<td>Yes</td>
+<td>32 chars(letter and digit number only)</td>
+<td>Please generate unique ID for each trade; we will echo it back to help you identify the response.</td>
+</tr>
+<tr>
+<td>orderId</td>
+<td>String</td>
+<td>Yes</td>
+<td>32 chars order id responded by server when place order</td>
+<td></td>
+</tr>
+<tr>
+<td>symbol</td>
+<td>String</td>
+<td>Yes</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>time</td>
+<td>Long</td>
+<td>Yes</td>
+<td>milliseconds since UNIX epoch in UTC</td>
+<td>We do not process request placed more than 30 seconds ago.</td>
+</tr>
+</tbody></table>
+<h4 id='response'>Response</h4>
+<p><em>ACK</em></p>
+
+<p>Response with status &quot;Ack&quot; to indicate the cancel order request is received by server. And you should use provided &quot;orderId&quot; to check cancel status in the future; we also echo back <em>id</em> from your request for reference purpose.</p>
+
+<p><em>ERR</em></p>
+
+<p>Response with status &quot;Err&quot; to indicate there is something wrong with the cancel order request. We echo back the <em>coid</em> field in your request.</p>
+<h3 id='list-open-orders'>List Open Orders</h3>
 <blockquote>
 <p>Open Orders - Successful Response (Status 200, code 0)</p>
 </blockquote>
