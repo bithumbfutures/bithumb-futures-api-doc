@@ -202,7 +202,7 @@ There are two different permissions:
 #### RESTful APIs
 
 API                               |  Type   | View | Trade | Mehod / URL
---------------------------------- | ------- | ---- | ----- | ---------------------------------------- 
+--------------------------------- | ------- | :--: | :---: | ---------------------------------------- 
 Market Data                       | Public  |      |       | `GET /api/pro/v1/futures/market-data`
 Funding Rate History              | Public  |      |       | `GET /api/pro/v1/futures/funding-rates`
 Futures Contract Info             | Public  |      |       | `GET /api/pro/v1/futures/contracts`
@@ -222,7 +222,7 @@ Cancel Order                      | Private |      |   x   | `DELETE <account-gr
 #### WebSocket Requests
 
 API                          |  Type   | View | Trade | Action
----------------------------- | ------- | ---- | ----- | --------------------
+---------------------------- | ------- | :--: | :---: | --------------------
 Authenticate Session         | Public  |      |   x   | `auth`
 Place New Order              | Private |      |   x   | `place-order`
 Cancel Order                 | Private |      |   x   | `cancel-order`
