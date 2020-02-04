@@ -29,6 +29,10 @@ curl -X GET https://bfutures.io/api/pro/v1/futures/contracts
 }
 ```
 
+#### Permissions 
+
+This API is public. 
+
 #### HTTP Request
 
 `GET /api/pro/v1/futures/contracts`

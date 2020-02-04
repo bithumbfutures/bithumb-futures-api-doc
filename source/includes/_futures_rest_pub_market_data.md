@@ -53,11 +53,13 @@ curl -X GET https://bfutures.io/api/pro/futures/market-data?symbol=BTC-PERP,
 }
 ```
 
+#### Permissions 
+
+This API is public. 
 
 #### HTTP Request
 
 `GET /api/pro/v1/futures/market-data`
-
 
 #### Request Parameters 
 

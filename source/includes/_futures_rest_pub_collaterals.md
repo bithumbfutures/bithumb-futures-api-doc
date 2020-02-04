@@ -29,6 +29,10 @@ curl -X GET https://bfutures.io/api/pro/v1/futures/collateral
 You can get a list of assets eligible to be used as collateral with this API, along with other information needed to calculate 
 the total collateral value of your account. 
 
+#### Permissions 
+
+This API is public. 
+
 
 #### HTTP Request
 
