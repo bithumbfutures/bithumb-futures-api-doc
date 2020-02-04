@@ -88,3 +88,4 @@ Name                       |  Type     | Description                            
 **indexPrice**             | `String`  | the index price                             | `"8495.01"`
 **markPrice**              | `String`  | the mark price                              | `"8493.50"`
 
+

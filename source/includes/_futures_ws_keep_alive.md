@@ -45,3 +45,4 @@ for 30 seconds if a client initiated `ping` message is received.
 **ts**   | `Long`   | server time in UTC miliseconds
 **hp**   | `Int`    | health point: when this value decreases to 0, the session will be disconnected.
 
+

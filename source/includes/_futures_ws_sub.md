@@ -102,7 +102,9 @@ You can customize the channel content by setting `ch` according to the table bel
 
  *Symbol* in *ref-px* is single asset symbol(e.g. `BTC`), not trading pair symbol (e.g. `BTC-PERP`), which is different from other channels.
 
- #### Unsubscribe with Wildcard Character `*`
+#### Unsubscribe with Wildcard Character `*`
 
 Using the wildcard character `*`, you can unsubscribe from multiple channels with the same channel name.
  
+
+

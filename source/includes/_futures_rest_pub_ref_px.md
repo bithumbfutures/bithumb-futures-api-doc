@@ -13,3 +13,4 @@ This API is public.
 #### HTTP Request
 
 `GET /api/pro/v1/futures/ref-px`
+

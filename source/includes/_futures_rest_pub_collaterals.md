@@ -51,3 +51,4 @@ The exchange calculates the total collateral value of an account based on its ad
 (**discount factor * reference price * collateral balance**). The **collateral value** of the account is simply the sum of 
 the adjusted USDT value of its all collateral assets. 
 
+

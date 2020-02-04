@@ -56,3 +56,5 @@ value into one aggregated item. Each trade object contains the following fields:
 **ts**     | `Long`     | the UTC timestamp in milliseconds of the first trade
 **bm**     | `Boolean`  | if true, the buyer of the trade is the maker.
 
+
+

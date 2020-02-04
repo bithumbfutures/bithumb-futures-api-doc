@@ -37,3 +37,4 @@ the price and/or size changes at the top of the order book.
 
 Each BBO message contains price and size data for exactly one bid level and one ask level. 
 
+

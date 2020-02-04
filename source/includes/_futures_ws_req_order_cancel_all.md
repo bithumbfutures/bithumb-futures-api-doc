@@ -53,3 +53,4 @@ Make general websocket request with `action` field as `cancel-All` and set prope
 With *status* field as *Ack* to indicate this cancel all order request has been received by server and sent to matching engine. 
 
 *info* field provide some detail: if you provide *id* in your request, it will be echoed back as *id* to help you match ack with request.
+

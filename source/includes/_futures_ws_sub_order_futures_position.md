@@ -43,3 +43,4 @@ The `data` field is an object with following fields:
 **ucol** | `String`  |  collateral in use (in USDT)
 **mbos** | `String`  |  maximum quantity allowed to buy
 **msos** | `String`  |  maximum quantity allowed to sell
+

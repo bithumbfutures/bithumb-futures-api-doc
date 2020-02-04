@@ -54,3 +54,4 @@ This API is public.
 **statusCode**       | `String` | status code of the contract, e.g., `Normal`
 **statusMessage**    | `String` | When status code is not `Normal`, this message will contain the reason.
 
+

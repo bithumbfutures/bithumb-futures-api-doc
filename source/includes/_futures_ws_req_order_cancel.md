@@ -56,11 +56,11 @@
 
 Cancel an existing open order via websocket 
 
-**Request**
+#### Request
 
 Make order cancelling request follow the general websocket request rule by setting `action` to be `cancel-orde`, with proper cancel order parameters as specified in rest api for *args* field.
 
-**Response**
+#### Response
 
 *ACK* 
 
@@ -73,3 +73,4 @@ With *status* field as *Ack* to indicate this cancel order request pass some bas
 With *status* field as *Err* to indicate there is some obvisous errors in your cancel order request. 
 
 *info* field provide some detail: if you provide *id* in your request, it will be echoed back as *id* to help you identify; we also provide error *code*, *reason*, and *message* detail.
+

@@ -82,3 +82,4 @@ Each transaction record contains the following fields:
 **time**                 | `Long`   | UTC Timestamp in milliseconds
 **transactionType**      | `String` | deposit / withdrawal
 
+

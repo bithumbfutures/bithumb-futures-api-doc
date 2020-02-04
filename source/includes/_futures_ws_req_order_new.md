@@ -61,14 +61,14 @@
 
 Place order via websocket 
 
-**Request**
+#### Request
 
 Make new order request follow the general websocket request rule, with proper place new order parameters as specified in rest api for *args* field.
 
 see [placing order via RESTful API](#place-an-order).
 
 
-**Response**
+#### Response
 
 Respond with *m* field as *order*, and *action* field as *place-order*; *status* field to indicate if this is a successful *Ack* or failed *Err*.
 
@@ -84,3 +84,4 @@ With *status* field as *Ack* to indicate this new order request pass some basic 
 With *status* field as *Err* to indicate there is some obvisous errors in your order. 
 
 *info* field provide some detail: if you provide *id* in your request, it will be echoed back as *id* to help you identify; we also provide error *code*, *reason*, and *message* detail.
+

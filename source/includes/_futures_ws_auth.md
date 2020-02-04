@@ -111,3 +111,4 @@ Field    | Type                 | Description
 **id**   |  `String`            | echo back the id if you provide one in the request                     
 **code** |  `Long`              | Any code other than 0 indicate an error in authentication              
 **err**  |  `Optional[String]`  | Provide detailed error message if code is not 0   
+

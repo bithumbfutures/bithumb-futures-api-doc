@@ -45,3 +45,4 @@ This API is public.
 **timestamp**   | `Long`   |
 **symbol**      | `String` |
 **fundingRate** | `String` |
+
