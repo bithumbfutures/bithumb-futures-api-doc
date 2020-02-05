@@ -201,7 +201,7 @@ There are two different permissions:
 
 #### RESTful APIs
 
-API                               |  Type   | View | Trade | Mehod / URL
+API                               |  Type   | View | Trade | Method / URL
 --------------------------------- | ------- | :--: | :---: | ---------------------------------------- 
 Market Data                       | Public  |      |       | `GET /api/pro/v1/futures/market-data`
 Funding Rate History              | Public  |      |       | `GET /api/pro/v1/futures/funding-rates`
