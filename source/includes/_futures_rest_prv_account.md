@@ -9,7 +9,7 @@
         "accountGroup": 0,
         "email": "yyzzxxz@email.com",
         "futuresAccount": [
-            "fut1FfjKA3W1L7XZOipGKZNFBb34GRQ3"
+            "futZrwfTaL4Py6M05X0SnJ9QFIuj6k2Q"
         ],
         "tradePermission":    true,
         "transferPermission": true,

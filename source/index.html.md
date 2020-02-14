@@ -33,6 +33,7 @@ includes:
   - futures_rest_order_cancel
   - futures_rest_order_open
   - futures_rest_order_hist
+  - futures_rest_order_hist_curr
 
   - futures_ws
   - futures_ws_keep_alive
