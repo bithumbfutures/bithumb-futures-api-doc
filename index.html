@@ -322,6 +322,9 @@
                         <li>
                           <a href="#historical-orders" class="toc-h3 toc-link" data-title="Historical Orders">Historical Orders</a>
                         </li>
+                        <li>
+                          <a href="#list-current-history-orders" class="toc-h3 toc-link" data-title="List Current History Orders">List Current History Orders</a>
+                        </li>
                     </ul>
                   </li>
               </ul>
@@ -540,7 +543,7 @@ to apply for new API keys. </p>
 <th>Type</th>
 <th style="text-align: center">View</th>
 <th style="text-align: center">Trade</th>
-<th>Mehod / URL</th>
+<th>Method / URL</th>
 </tr>
 </thead><tbody>
 <tr>
@@ -1063,7 +1066,7 @@ be a list of objects, append a comma (e.g. <code>symbol=BTC-PERP,</code>).</p>
         </span><span class="s2">"accountGroup"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
         </span><span class="s2">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"yyzzxxz@email.com"</span><span class="p">,</span><span class="w">
         </span><span class="s2">"futuresAccount"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-            </span><span class="s2">"fut1FfjKA3W1L7XZOipGKZNFBb34GRQ3"</span><span class="w">
+            </span><span class="s2">"futZrwfTaL4Py6M05X0SnJ9QFIuj6k2Q"</span><span class="w">
         </span><span class="p">],</span><span class="w">
         </span><span class="s2">"tradePermission"</span><span class="p">:</span><span class="w">    </span><span class="kc">true</span><span class="p">,</span><span class="w">
         </span><span class="s2">"transferPermission"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
@@ -1719,7 +1722,7 @@ to you account. </p>
     </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
     </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
         </span><span class="s2">"ac"</span><span class="p">:</span><span class="w">        </span><span class="s2">"FUTURES"</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"accountId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"fut1FfjKA3W1L7XZOipGKZNFBb34GRQ3"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"accountId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"futZrwfTaL4Py6M05X0SnJ9QFIuj6k2Q"</span><span class="p">,</span><span class="w">
         </span><span class="s2">"action"</span><span class="p">:</span><span class="w">    </span><span class="s2">"place-order"</span><span class="p">,</span><span class="w">
         </span><span class="s2">"info"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
             </span><span class="s2">"id"</span><span class="p">:</span><span class="w">        </span><span class="s2">"16e607e2b83a8bXHbAwwoqDo55c166fa"</span><span class="p">,</span><span class="w">
@@ -1753,7 +1756,7 @@ to you account. </p>
     </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
     </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
         </span><span class="s2">"ac"</span><span class="p">:</span><span class="w">        </span><span class="s2">"FUTURES"</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"accountId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"fut1FfjKA3W1L7XZOipGKZNFBb34GRQ3"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"accountId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"futZrwfTaL4Py6M05X0SnJ9QFIuj6k2Q"</span><span class="p">,</span><span class="w">
         </span><span class="s2">"action"</span><span class="p">:</span><span class="w">    </span><span class="s2">"place-order"</span><span class="p">,</span><span class="w">          
         </span><span class="s2">"info"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">            
             </span><span class="s2">"avgPx"</span><span class="p">:</span><span class="w">        </span><span class="s2">"0"</span><span class="p">,</span><span class="w">
@@ -1796,7 +1799,7 @@ to you account. </p>
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
  </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
     </span><span class="s2">"ac"</span><span class="p">:</span><span class="w">        </span><span class="s2">"FUTURES"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"accountId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"MPXFNEYEJIJ93CREXT3LTCIDIJPCFNIX"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"accountId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"futZrwfTaL4Py6M05X0SnJ9QFIuj6k2Q"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"action"</span><span class="p">:</span><span class="w">    </span><span class="s2">"place-order"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"info"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
         </span><span class="s2">"avgPx"</span><span class="p">:</span><span class="w">        </span><span class="s2">"7399.99"</span><span class="p">,</span><span class="w">
@@ -1825,7 +1828,7 @@ to you account. </p>
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
     </span><span class="s2">"code"</span><span class="p">:</span><span class="w">      </span><span class="mi">300011</span><span class="p">,</span><span class="w">
     </span><span class="s2">"ac"</span><span class="p">:</span><span class="w">        </span><span class="s2">"FUTURES"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"accountId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"fut1FfjKA3W1L7XZOipGKZNFBb34GRQ3"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"accountId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"futZrwfTaL4Py6M05X0SnJ9QFIuj6k2Q"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"action"</span><span class="p">:</span><span class="w">    </span><span class="s2">"place-order"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"message"</span><span class="p">:</span><span class="w">   </span><span class="s2">"Not Enough Account Balance"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"reason"</span><span class="p">:</span><span class="w">    </span><span class="s2">"INVALID_BALANCE"</span><span class="p">,</span><span class="w">
@@ -2311,7 +2314,7 @@ to you account. </p>
 </blockquote>
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
   </span><span class="s2">"accountCategory"</span><span class="p">:</span><span class="w"> </span><span class="s2">"FUTURES"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"accountId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"cshQtyfq8XLAA9kcf19h8bXHbAwwoqDo"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"accountId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"futZrwfTaL4Py6M05X0SnJ9QFIuj6k2Q"</span><span class="p">,</span><span class="w">
   </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
   </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
    </span><span class="p">{</span><span class="w">
@@ -2443,7 +2446,75 @@ to you account. </p>
 <ul>
 <li><code>errorCode</code> is no longer included in the open order response. It is still included in the historical order query response.</li>
 </ul>
-<h3 id='historical-orders'>Historical Orders</h3><h1 id='websocket'>WebSocket</h1><h2 id='guidelines'>Guidelines</h2><h3 id='general-message-request-handling-logic-from-client-side'>General Message Request/Handling Logic from Client Side</h3>
+<h3 id='historical-orders'>Historical Orders</h3><h3 id='list-current-history-orders'>List Current History Orders</h3>
+<blockquote>
+<p>Current History Orders - Successful Response (Status 200, code 0)</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="s2">"ac"</span><span class="p">:</span><span class="w"> </span><span class="s2">"FUTURES"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"accountId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"futZrwfTaL4Py6M05X0SnJ9QFIuj6k2Q"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"seqNum"</span><span class="p">:</span><span class="w">       </span><span class="mi">168383</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"symbol"</span><span class="p">:</span><span class="w">       </span><span class="s2">"BTC-PERP"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"side"</span><span class="p">:</span><span class="w">         </span><span class="s2">"Buy"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"avgPx"</span><span class="p">:</span><span class="w">        </span><span class="s2">"9825.235"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"cumFee"</span><span class="p">:</span><span class="w">       </span><span class="s2">"0.080566927"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"cumFilledQty"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.01"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"errorCode"</span><span class="p">:</span><span class="w">    </span><span class="s2">""</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"execInst"</span><span class="p">:</span><span class="w">     </span><span class="s2">"NULL_VAL"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"feeAsset"</span><span class="p">:</span><span class="w">     </span><span class="s2">"USDT"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"lastExecTime"</span><span class="p">:</span><span class="w">  </span><span class="mi">1581708299976</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"orderId"</span><span class="p">:</span><span class="w">      </span><span class="s2">"r170452951ca5362614103bbtcpcS7p"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"orderQty"</span><span class="p">:</span><span class="w">     </span><span class="s2">"0.01"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"orderType"</span><span class="p">:</span><span class="w">    </span><span class="s2">"Limit"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"price"</span><span class="p">:</span><span class="w">        </span><span class="s2">"9950.5"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"status"</span><span class="p">:</span><span class="w">       </span><span class="s2">"Filled"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"stopPrice"</span><span class="p">:</span><span class="w">    </span><span class="s2">""</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>This API returns all current history orders for the account specified. This API will only respond with most recently closed orders cached by the server. 
+To query the full history, please use the <a href="#historical-orders"><strong>Historical Orders</strong></a> API. </p>
+<h4 id='http-request'>HTTP Request</h4>
+<p><code>GET &lt;account-group&gt;/api/pro/v1/futures/order/hist/current</code></p>
+<h4 id='signature'>Signature</h4>
+<p>You should sign the message in header as specified in <a href="#sign-request"><strong>Authenticate a RESTful Request</strong></a> section.</p>
+<h4 id='prehash-string'>Prehash String</h4>
+<p><code>&lt;timestamp&gt;+order/hist/current</code></p>
+<h4 id='request-parameters'>Request Parameters</h4>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>n</code></td>
+<td><code>Int</code></td>
+<td>No</td>
+<td>maximum number of orders to be included in the response</td>
+</tr>
+<tr>
+<td><code>symbol</code></td>
+<td><code>String</code></td>
+<td>No</td>
+<td>symbol filter, e.g. <code>&quot;BTMX/USDT&quot;</code></td>
+</tr>
+<tr>
+<td><code>executedOnly</code></td>
+<td><code>Boolean</code></td>
+<td>No</td>
+<td>if <code>True</code>, include orders with non-zero filled quantities only.</td>
+</tr>
+</tbody></table>
+<h4 id='response'>Response</h4>
+<p>Return a list of history orders in <em>&quot;data&quot;</em> field.</p>
+<h1 id='websocket'>WebSocket</h1><h2 id='guidelines'>Guidelines</h2><h3 id='general-message-request-handling-logic-from-client-side'>General Message Request/Handling Logic from Client Side</h3>
 <ul>
 <li>Client usually initiate request with <code>op</code> parameter (followed by other required parameters).</li>
 <li>Server usually reply message with <code>m</code> value to indicate message topic, e.g., <code>order</code>, <code>depth</code>, <code>auth</code>.</li>
