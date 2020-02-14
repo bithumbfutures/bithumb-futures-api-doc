@@ -4,12 +4,12 @@
 
 ```json
 {
-    "ac": "CASH",
+    "ac": "FUTURES",
     "accountId": "futZrwfTaL4Py6M05X0SnJ9QFIuj6k2Q",
     "code": 0,
     "data": [
         {
-            "seqNum":        168383,
+            "seqNum":       168383,
             "symbol":       "BTC-PERP",
             "side":         "Buy",
             "avgPx":        "9825.235",
@@ -36,9 +36,7 @@ To query the full history, please use the [**Historical Orders**](#historical-or
 
 #### HTTP Request
 
-`GET <account-group>/api/pro/v1/{account-category}/order/hist/current`
-
-Set `account-category` to`cash` for cash account and `margin` for margin account. 
+`GET <account-group>/api/pro/v1/futures/order/hist/current`
 
 #### Signature
 
