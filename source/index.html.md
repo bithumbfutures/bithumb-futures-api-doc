@@ -33,6 +33,7 @@ includes:
   - futures_rest_order_cancel
   - futures_rest_order_open
   - futures_rest_order_hist
+  - futures_rest_order_hist_curr
 
   - futures_ws
   - futures_ws_keep_alive
@@ -201,7 +202,7 @@ There are two different permissions:
 
 #### RESTful APIs
 
-API                               |  Type   | View | Trade | Mehod / URL
+API                               |  Type   | View | Trade | Method / URL
 --------------------------------- | ------- | :--: | :---: | ---------------------------------------- 
 Market Data                       | Public  |      |       | `GET /api/pro/v1/futures/market-data`
 Funding Rate History              | Public  |      |       | `GET /api/pro/v1/futures/funding-rates`
