@@ -15,6 +15,10 @@ includes:
   - futures_rest_pub
   - futures_rest_pub_collaterals
   - futures_rest_pub_contracts
+  - futures_rest_pub_bar
+  - futures_rest_pub_depth
+  - futures_rest_pub_ticker
+  - futures_rest_pub_trades
   - futures_rest_pub_ref_px
   - futures_rest_pub_market_data
   - futures_rest_pub_funding_rates
