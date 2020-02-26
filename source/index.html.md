@@ -52,6 +52,7 @@ includes:
   - futures_ws_sub_bar
   - futures_ws_sub_level1
   - futures_ws_sub_level2
+  - futures_ws_sub_trades
   - futures_ws_sub_market_data
 
   - futures_ws_sub_order
@@ -239,5 +240,8 @@ Cancel Order                 | Private |      |   x   | `cancel-order`
 Cancel All Orders            | Private |      |   x   | `cancel-all`
 Account Contract Positions   | Private |  x   |       | `futures-position`
 Account Futures Risk Profile | Private |  x   |       | `futures-risk`
+
+
+## Demo Code
 
 
