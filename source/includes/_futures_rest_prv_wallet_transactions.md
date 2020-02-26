@@ -1,6 +1,6 @@
-### Wallet Transaction History
+### Deposit/Withdrawal History
 
-> Wallet Transaction History 
+> Deposit/Withdrawal History 
 
 ```json
 {
@@ -82,4 +82,8 @@ Each transaction record contains the following fields:
 **time**                 | `Long`   | UTC Timestamp in milliseconds
 **transactionType**      | `String` | deposit / withdrawal
 
+
+#### Code Sample
+
+please refer to python code to [cancel batch order](https://github.com/bithumbfutures/bithumb-futures-api-demo/blob/master/python/query-wallet-tx.py)
 

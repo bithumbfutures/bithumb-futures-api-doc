@@ -1,4 +1,4 @@
-### Wallet Transactions
+### Transactions History 
 
 > Sample Resonse
 
@@ -62,5 +62,5 @@ Currently, there are four possible values for **status**:
 
 #### Code Sample
 
-Please refer to python code to [get open orders](https://github.com/???/query_order.py)
+Please refer to python code to [get open orders](https://github.com/bithumbfutures/bithumb-futures-api-demo/blob/master/python/query-futures-tx-history.py)
 
