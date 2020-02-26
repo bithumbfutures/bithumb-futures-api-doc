@@ -259,6 +259,9 @@
                         </li>
                     </ul>
                   </li>
+                  <li>
+                    <a href="#demo-code" class="toc-h2 toc-link" data-title="Demo Code">Demo Code</a>
+                  </li>
               </ul>
           </li>
           <li>
@@ -404,6 +407,9 @@
                         </li>
                         <li>
                           <a href="#channel-level-2-order-book-updates" class="toc-h3 toc-link" data-title="Channel: Level 2 Order Book Updates">Channel: Level 2 Order Book Updates</a>
+                        </li>
+                        <li>
+                          <a href="#channel-market-trades" class="toc-h3 toc-link" data-title="Channel: Market Trades">Channel: Market Trades</a>
                         </li>
                         <li>
                           <a href="#channel-futures-market-data" class="toc-h3 toc-link" data-title="Channel: Futures Market Data">Channel: Futures Market Data</a>
@@ -728,7 +734,7 @@ to apply for new API keys. </p>
 <td><code>futures-risk</code></td>
 </tr>
 </tbody></table>
-<h1 id='rest-apis-futures'>REST APIs - Futures</h1><h2 id='market-data-public'>Market Data (Public)</h2>
+<h2 id='demo-code'>Demo Code</h2><h1 id='rest-apis-futures'>REST APIs - Futures</h1><h2 id='market-data-public'>Market Data (Public)</h2>
 <p>Anyone can access public market data.  </p>
 <h3 id='futures-collateral-assets'>Futures Collateral Assets</h3>
 <blockquote>
@@ -4612,6 +4618,70 @@ you can use to update the order book snapshot. In the message, <code>price</code
 </ul>
 
 <p>See <a href="#orderbook-snapshot">Orderbook Snapshot</a> for code examples.</p>
+<h3 id='channel-market-trades'>Channel: Market Trades</h3>
+<blockquote>
+<p>Subscribe to <code>BTC-PERP</code> market trades stream</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w"> </span><span class="s2">"op"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sub"</span><span class="p">,</span><span class="w"> </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"abc123"</span><span class="p">,</span><span class="w"> </span><span class="s2">"ch"</span><span class="p">:</span><span class="s2">"trades:BTC-PERP"</span><span class="w"> </span><span class="p">}</span><span class="w">
+</span></code></pre>
+<blockquote>
+<p>Unsubscribe to <code>BTC-PERP</code> market trades stream</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w"> </span><span class="s2">"op"</span><span class="p">:</span><span class="w"> </span><span class="s2">"unsub"</span><span class="p">,</span><span class="w"> </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"abc123"</span><span class="p">,</span><span class="w"> </span><span class="s2">"ch"</span><span class="p">:</span><span class="s2">"trades:BTC-PERP"</span><span class="w"> </span><span class="p">}</span><span class="w">
+</span></code></pre>
+<blockquote>
+<p>Trade Message </p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="s2">"m"</span><span class="p">:</span><span class="w"> </span><span class="s2">"trades"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"symbol"</span><span class="p">:</span><span class="w"> </span><span class="s2">"BTC-PERP"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"p"</span><span class="p">:</span><span class="w">      </span><span class="s2">"0.068600"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"q"</span><span class="p">:</span><span class="w">      </span><span class="s2">"100.000"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"ts"</span><span class="p">:</span><span class="w">      </span><span class="mi">1573069903254</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"bm"</span><span class="p">:</span><span class="w">      </span><span class="kc">false</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"seqnum"</span><span class="p">:</span><span class="w">  </span><span class="mi">144115188077966308</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>The <code>data</code> field is a list containing one or more trade objects. The server may combine consecutive trades with the same price and <code>bm</code> 
+value into one aggregated item. Each trade object contains the following fields:</p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>seqnum</code></td>
+<td><code>Long</code></td>
+<td>the sequence number of the trade record. <code>seqnum</code> is always increasing for each symbol, but may not be consecutive</td>
+</tr>
+<tr>
+<td><code>p</code></td>
+<td><code>String</code></td>
+<td>the executed price expressed as a string</td>
+</tr>
+<tr>
+<td><code>q</code></td>
+<td><code>String</code></td>
+<td>the aggregated traded amount expressed as string</td>
+</tr>
+<tr>
+<td><code>ts</code></td>
+<td><code>Long</code></td>
+<td>the UTC timestamp in milliseconds of the first trade</td>
+</tr>
+<tr>
+<td><code>bm</code></td>
+<td><code>Boolean</code></td>
+<td>if true, the buyer of the trade is the maker.</td>
+</tr>
+</tbody></table>
 <h3 id='channel-futures-market-data'>Channel: Futures Market Data</h3>
 <blockquote>
 <p>Subscribe to Futures Market Data</p>
