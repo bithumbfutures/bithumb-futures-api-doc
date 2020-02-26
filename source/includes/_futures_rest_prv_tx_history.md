@@ -39,6 +39,14 @@ You should sign the message in header as specified in [**Authenticate a RESTful 
 
 `<timestamp>+futures/tx-history`
 
+#### HTTP Parameters 
+
+   Name      | Type   | Required | Value Range                    | Description
+------------ | ------ | -------- | ------------------------------ |---------------
+**page**     | `Int`  | No       | page number, starting from 1   | 
+**pageSize** | `Int`  | No       | page size, must be positive    | 
+
+
 #### Response
 
 This API returns paginated data. 
