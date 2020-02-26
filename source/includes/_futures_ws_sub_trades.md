@@ -20,8 +20,8 @@
     "symbol": "BTC-PERP",
     "data": [
         {
-            "p":      "0.068600",
-            "q":      "100.000",
+            "p":      "9100",
+            "q":      "0.015",
             "ts":      1573069903254,
             "bm":      false,
             "seqnum":  144115188077966308
@@ -42,4 +42,3 @@ value into one aggregated item. Each trade object contains the following fields:
  `bm`     | `Boolean`  | if true, the buyer of the trade is the maker.
 
 
- 
