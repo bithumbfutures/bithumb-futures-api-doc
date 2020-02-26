@@ -45,9 +45,22 @@ This API returns paginated data.
 
 Name            | Type     | Description
 --------------- | -------- | -------------- 
-**time**        | `Long`   | 
+**time**        | `Long`   | UTC timestamp in milliseconds
+**asset**       | `String` | asset code, e.g. `BTC`
+**amount**      | `String` | changed amount 
+**txType**      | `String` | transaction type, such as PositionInjection, Takeover, etc
+**status**      | `String` | SUCCESS / FAIED
+**requestId**   | `String` | A unique identifier for this balance change event     
+
+Currently, there are four possible values for **status**:
+
+* `Takeover`
+* `CollateralConversion`
+* `PositionInjection`
+* `PositionInjectionBLP`
 
 
 #### Code Sample
 
 Please refer to python code to [get open orders](https://github.com/???/query_order.py)
+

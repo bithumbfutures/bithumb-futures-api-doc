@@ -49,8 +49,8 @@ You should sign the message in header as specified in [**Authenticate a RESTful 
 
 #### Request Parameters
 
- Name            | Type      | Required | Description                                                                                 
----------------- | --------- | -------- | ------------------------------------------------------------------------------------------- 
+ Name             | Type      | Required | Description                                                                                 
+----------------- | --------- | -------- | ------------------------------------------------------------------------------------------- 
 **n**             | `Int`     | No       | maximum number of orders to be included in the response
 **symbol**        | `String`  | No       | symbol filter, e.g. `"BTC-PERP"`
 **executedOnly**  | `Boolean` | No       | if `True`, include orders with non-zero filled quantities only.
