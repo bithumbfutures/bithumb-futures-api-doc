@@ -318,7 +318,10 @@
                           <a href="#funding-payment-history" class="toc-h3 toc-link" data-title="Funding Payment History">Funding Payment History</a>
                         </li>
                         <li>
-                          <a href="#wallet-transaction-history" class="toc-h3 toc-link" data-title="Wallet Transaction History">Wallet Transaction History</a>
+                          <a href="#deposit-withdrawal-history" class="toc-h3 toc-link" data-title="Deposit/Withdrawal History">Deposit/Withdrawal History</a>
+                        </li>
+                        <li>
+                          <a href="#transactions-history" class="toc-h3 toc-link" data-title="Transactions History">Transactions History</a>
                         </li>
                     </ul>
                   </li>
@@ -2167,9 +2170,9 @@ to you account. </p>
 </tbody></table>
 <h4 id='code-sample'>Code Sample</h4>
 <p>Please refer to python code to <a href="https://github.com/???/query-futures-funding-payments.py">query funding payments</a></p>
-<h3 id='wallet-transaction-history'>Wallet Transaction History</h3>
+<h3 id='deposit-withdrawal-history'>Deposit/Withdrawal History</h3>
 <blockquote>
-<p>Wallet Transaction History </p>
+<p>Deposit/Withdrawal History </p>
 </blockquote>
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
   </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
@@ -2347,6 +2350,90 @@ to you account. </p>
 <td>deposit / withdrawal</td>
 </tr>
 </tbody></table>
+<h4 id='code-sample'>Code Sample</h4>
+<p>please refer to python code to <a href="https://github.com/bithumbfutures/bithumb-futures-api-demo/blob/master/python/query-wallet-tx.py">cancel batch order</a></p>
+<h3 id='transactions-history'>Transactions History</h3>
+<blockquote>
+<p>Sample Resonse</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"time"</span><span class="p">:</span><span class="w">      </span><span class="mi">1574640000000</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"asset"</span><span class="p">:</span><span class="w">     </span><span class="s2">"BTC"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"amount"</span><span class="p">:</span><span class="w">    </span><span class="s2">"-0.129"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"txType"</span><span class="p">:</span><span class="w">    </span><span class="s2">"Takeover"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"status"</span><span class="p">:</span><span class="w">    </span><span class="s2">"SUCCESS"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"requestId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"09naslvPvsSLxl9A"</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+        </span><span class="p">],</span><span class="w">
+        </span><span class="s2">"hasNext"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"page"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"pageSize"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre><h4 id='permissions'>Permissions</h4>
+<p>You need view permission to access this API.</p>
+<h4 id='http-request'>HTTP Request</h4>
+<p><code>GET /api/pro/v1/futures/tx-history</code></p>
+<h4 id='signature'>Signature</h4>
+<p>You should sign the message in header as specified in <a href="#sign-a-request"><strong>Authenticate a RESTful Request</strong></a> section.</p>
+<h4 id='prehash-string'>Prehash String</h4>
+<p><code>&lt;timestamp&gt;+futures/tx-history</code></p>
+<h4 id='response'>Response</h4>
+<p>This API returns paginated data. </p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><strong>time</strong></td>
+<td><code>Long</code></td>
+<td>UTC timestamp in milliseconds</td>
+</tr>
+<tr>
+<td><strong>asset</strong></td>
+<td><code>String</code></td>
+<td>asset code, e.g. <code>BTC</code></td>
+</tr>
+<tr>
+<td><strong>amount</strong></td>
+<td><code>String</code></td>
+<td>changed amount</td>
+</tr>
+<tr>
+<td><strong>txType</strong></td>
+<td><code>String</code></td>
+<td>transaction type, such as PositionInjection, Takeover, etc</td>
+</tr>
+<tr>
+<td><strong>status</strong></td>
+<td><code>String</code></td>
+<td>SUCCESS / FAIED</td>
+</tr>
+<tr>
+<td><strong>requestId</strong></td>
+<td><code>String</code></td>
+<td>A unique identifier for this balance change event</td>
+</tr>
+</tbody></table>
+
+<p>Currently, there are four possible values for <strong>status</strong>:</p>
+
+<ul>
+<li><code>Takeover</code></li>
+<li><code>CollateralConversion</code></li>
+<li><code>PositionInjection</code></li>
+<li><code>PositionInjectionBLP</code></li>
+</ul>
+<h4 id='code-sample'>Code Sample</h4>
+<p>Please refer to python code to <a href="https://github.com/bithumbfutures/bithumb-futures-api-demo/blob/master/python/query-futures-tx-history.py">get open orders</a></p>
 <h2 id='order'>Order</h2><h3 id='place-an-order'>Place an Order</h3>
 <blockquote>
 <p>Place Order - Successful ACK Response (Status 200, code 0)</p>
