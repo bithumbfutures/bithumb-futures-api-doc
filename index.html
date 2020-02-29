@@ -2388,6 +2388,31 @@ to you account. </p>
 <p>You should sign the message in header as specified in <a href="#sign-a-request"><strong>Authenticate a RESTful Request</strong></a> section.</p>
 <h4 id='prehash-string'>Prehash String</h4>
 <p><code>&lt;timestamp&gt;+futures/tx-history</code></p>
+<h4 id='http-parameters'>HTTP Parameters</h4>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Required</th>
+<th>Value Range</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><strong>page</strong></td>
+<td><code>Int</code></td>
+<td>No</td>
+<td>page number, starting from 1</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>pageSize</strong></td>
+<td><code>Int</code></td>
+<td>No</td>
+<td>page size, must be positive</td>
+<td></td>
+</tr>
+</tbody></table>
 <h4 id='response'>Response</h4>
 <p>This API returns paginated data. </p>
 
@@ -2645,7 +2670,7 @@ to you account. </p>
 <td><strong>postOnly</strong></td>
 <td>Boolean</td>
 <td>No</td>
-<td>[&quot;true&quot;, &quot;false&quot;]</td>
+<td>[true, false]</td>
 <td></td>
 </tr>
 <tr>
