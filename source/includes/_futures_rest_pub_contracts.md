@@ -3,7 +3,7 @@
 > Futures Contracts
 
 ```shell
-curl -X GET https://bfutures.io/api/pro/v1/futures/contracts
+curl -X GET https://bithumbfutures.com/api/pro/v1/futures/contracts
 ```
 
 > Sample Resonse

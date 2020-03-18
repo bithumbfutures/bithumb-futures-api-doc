@@ -11,7 +11,7 @@
 npm install -g wscat
 
 # Connect to websocket
-wscat -c wss://bfutures.io/0/api/pro/v1/stream -x '{"op":"sub", "ch": "depth:BTC-PERP"}'
+wscat -c wss://bithumbfutures.com/0/api/pro/v1/stream -x '{"op":"sub", "ch": "depth:BTC-PERP"}'
 ```
 
 > You can also setup authorized session

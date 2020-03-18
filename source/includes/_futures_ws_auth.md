@@ -36,7 +36,7 @@ SIGNATURE=`echo -n $MESSAGE | openssl dgst -sha256 -hmac $SECRET -binary | base6
 wscat -H "x-auth-key: $APIKEY" \
   -H "x-auth-signature: $SIGNATURE" \
   -H "x-auth-timestamp: $TIMESTAMP" \
-  -c wss://bfutures.io/1/api/v1/t/stream -w 1 -x '{"op":"sub", "id": "abc123", "ch": "order:futZtmicU8Ls03xldo112uxpICXulxXd"}'
+  -c wss://bithumbfutures.com/1/api/v1/t/stream -w 1 -x '{"op":"sub", "id": "abc123", "ch": "order:futZtmicU8Ls03xldo112uxpICXulxXd"}'
 ```
 
 This is similar to the way you authenticate any RESTful request. You need to add the following header fields to the 
@@ -66,7 +66,7 @@ TIMESTAMP=`date +%s%N | cut -c -13`
 MESSAGE=$TIMESTAMP+$APIPATH
 SIGNATURE=`echo -n $MESSAGE | openssl dgst -sha256 -hmac $SECRET -binary | base64`
 
-wscat -c wss://bfutures.io/1/api/pro/stream -w 1 -x "{\"op\":\"auth\", \"id\": \"abc123\", \"t\": $TIMESTAMP, "key": \"$APIKEY\", \"sig\": \"$SIGNATURE\"}"
+wscat -c wss://bithumbfutures.com/1/api/pro/stream -w 1 -x "{\"op\":\"auth\", \"id\": \"abc123\", \"t\": $TIMESTAMP, "key": \"$APIKEY\", \"sig\": \"$SIGNATURE\"}"
 ```
 
 You can also authenticate a live websocket session by sending an `op:auth` message to the server. 

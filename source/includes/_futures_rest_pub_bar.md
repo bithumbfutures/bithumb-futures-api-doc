@@ -3,7 +3,7 @@
 > Request 
 
 ```
-curl -X GET https://bfutures.io/api/pro/v1/barhist/info
+curl -X GET https://bithumbfutures/comi/pro/v1/barhist/info
 ```
 
 > Sample response
@@ -97,7 +97,7 @@ The value in the `name` field should be your input to the [Historical Bar Data](
 > Request 
 
 ```
-curl -X GET https://bfutures.io.io/api/pro/v1/barhist?symbol=BTC-PERP&interval=1
+curl -X GET https://bithumbfutures.com/api/pro/v1/barhist?symbol=BTC-PERP&interval=1
 ```
 
 > Sample response

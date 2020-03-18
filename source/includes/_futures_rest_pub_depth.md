@@ -3,7 +3,7 @@
 > Request for Order Book (Depth) Data
 
 ```
-curl -X GET https://bfutures.io/api/pro/v1/depth?symbol=BTC-PERP
+curl -X GET https://bithumbfutures.com/api/pro/v1/depth?symbol=BTC-PERP
 ```
 
 > Order Book (Depth) Data - Sample response 

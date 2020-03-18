@@ -3,7 +3,7 @@
 > Ticker for one product
 
 ```json
-// curl -X GET 'https://bfutures.io/api/pro/v1/ticker?symbol=BTC-PERP'
+// curl -X GET 'https://bithumbfutures.com/api/pro/v1/ticker?symbol=BTC-PERP'
 {
     "code": 0,
     "data": {
@@ -22,7 +22,7 @@
 > List of Tickers for one or multiple products
 
 ```json
-// curl -X GET "https://bfutures.io/api/pro/v1/ticker?symbol=BTC-PERP,"
+// curl -X GET "https://bithumbfutures.com/api/pro/v1/ticker?symbol=BTC-PERP,"
 {
     "code": 0,
     "data": [

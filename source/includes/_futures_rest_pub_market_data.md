@@ -4,7 +4,7 @@
 
 ```
 # if only one symbol is provided, the API will respond with a single object
-curl -X GET https://bfutures.io/api/pro/futures/market-data?symbol=BTC-PERP
+curl -X GET https://bithumbfutures.com/api/pro/futures/market-data?symbol=BTC-PERP
 ```
 
 > Sample Resonse
@@ -30,7 +30,7 @@ curl -X GET https://bfutures.io/api/pro/futures/market-data?symbol=BTC-PERP
 
 ```
 # Appending a comma (,) and the API will respond with a list of one or more objects
-curl -X GET https://bfutures.io/api/pro/futures/market-data?symbol=BTC-PERP,
+curl -X GET https://bithumbfutures.com/api/pro/futures/market-data?symbol=BTC-PERP,
 ```
 
 > Sample Resonse

@@ -7,7 +7,7 @@ language_tabs: # must be one of https://git.io/vQNgJ
   - java
 
 toc_footers:
-  - <a href='bfutures.io'>Bithumb Futures</a>
+  - <a href='bithumbfutures.com'>Bithumb Futures</a>
 
 includes:
   - futures_rest
@@ -79,8 +79,8 @@ search: true
 The Bithumb Futures API is based on RESTful and WebSocket. 
 
 
-* The base URL for the RESTful API is `https://bfutures.io/`. 
-* The URL for the WebSocket is: `https://bfutures.io/<account-group>/api/v1/stream`. You will have to substitute `<account-group>` with your account group. 
+* The base URL for the RESTful API is `https://bithumbfutures.com/`. 
+* The URL for the WebSocket is: `https://bithumbfutures.com/<account-group>/api/v1/stream`. You will have to substitute `<account-group>` with your account group. 
 
 The RESTful API has JSON-encoded responses. All websocket messages are JSON-encoded. 
 
@@ -155,7 +155,7 @@ curl -X GET -i \
   -H "x-auth-key: $APIKEY" \
   -H "x-auth-signature: $SIGNATURE" \
   -H "x-auth-timestamp: $TIMESTAMP" \
-  https://bfutures.io/api/pro/v1/info
+  https://bithumbfutures.com/api/pro/v1/info
 ```
 
 ```python
