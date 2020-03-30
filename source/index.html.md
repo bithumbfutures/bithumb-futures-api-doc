@@ -80,7 +80,7 @@ The Bithumb Futures API is based on RESTful and WebSocket.
 
 
 * The base URL for the RESTful API is `https://bithumbfutures.com/`. 
-* The URL for the WebSocket is: `https://bithumbfutures.com/<account-group>/api/v1/stream`. You will have to substitute `<account-group>` with your account group. 
+* The URL for the WebSocket is: `https://bithumbfutures.com/<account-group>/api/pro/v1/stream`. You will have to substitute `<account-group>` with your account group. 
 
 The RESTful API has JSON-encoded responses. All websocket messages are JSON-encoded. 
 
